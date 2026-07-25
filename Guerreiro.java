@@ -1,20 +1,20 @@
 package eldoria;
 
-/**
- * Classe que representa um Guerreiro no reino de Eldoria.
- * Herda de Personagem e implementa habilidades específicas de combate.
+/*
+ * Classe que representa um Guerreiro.
+ * Herda as características da classe Personagem.
  */
 public class Guerreiro extends Personagem {
 
-     // * Construtor para criar um Guerreiro.
+    // Construtor da classe Guerreiro
+    public Guerreiro(String nome, String classe, int nivel, int pontosDeVida, double poderBase) {
+        super(nome, classe, nivel, pontosDeVida, poderBase);
+    }
 
-    /**
-     * Sobrescrita do método usarHabilidade() específica para Guerreiros.
-     * Demonstra polimorfismo e vinculação dinâmica.
-     */
+    // Habilidade específica do Guerreiro
     @Override
     public void usarHabilidade() {
-
+        System.out.println("Habilidade: " + getNome()
+                + " desfere um poderoso golpe de espada!");
     }
 }
-
