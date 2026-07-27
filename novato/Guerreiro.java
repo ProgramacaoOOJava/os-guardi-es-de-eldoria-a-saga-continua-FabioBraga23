@@ -1,4 +1,4 @@
-package eldoria;
+package novato;
 
 /*
  * Classe que representa um Guerreiro.
